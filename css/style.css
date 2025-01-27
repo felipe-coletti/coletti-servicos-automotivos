@@ -1,0 +1,291 @@
+:root {
+    --backdrop-color: #00000080;
+    --highlight-color: #e61d27;
+    --primary-background-color: #fff;
+    --primary-text-color: #000;
+    --secondary-text-color: #656565;
+    --shadow-color: #00000025;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.25rem;
+}
+
+#header {
+    align-items: center;
+    color: var(--primary-background-color);
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding-block: 0.75rem;
+    position: fixed;
+    top: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
+}
+
+.header-background {
+    background-color: var(--backdrop-color);
+    box-shadow: 0px 5px 20px 0px var(--shadow-color);
+}
+
+#logo {
+    height: 56px;
+}
+
+#nav {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.nav-item {
+    color: var(--primary-background-color);
+}
+
+#hamburguer-menu {
+    background-color: var(--primary-background-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    font-size: 0.875rem;
+    font-weight: bold;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.hamburguer-line {
+    background-color: var(--primary-text-color);
+    display: flex;
+    height: 2px;
+    width: 32px;
+}
+
+#backdrop {
+    height: 100vh;
+    justify-content: right;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#mobile-nav {
+    background-color: var(--primary-background-color);
+    box-shadow: -5px 0px 20px 0px var(--shadow-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 20rem;
+    width: 100%;
+}
+
+.closed {
+    display: none;
+}
+
+.opened {
+    display: flex;
+}
+
+.mobile-nav-item {
+    color: var(--primary-text-color);
+    padding: 1rem;
+}
+
+.nav-item,
+.mobile-nav-item {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding-block: 1.5rem;
+}
+
+#hero {
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/car-repair.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container {
+    max-width: 48rem;
+    width: 100%;
+}
+
+.section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#hero .container {
+    align-items: center;
+}
+
+#headline {
+    font-size: 2.5rem;
+}
+
+#sub-headline {
+    font-size: 1.25rem;
+}
+
+#headline,
+#sub-headline {
+    color: var(--primary-background-color);
+}
+
+.button {
+    background-color: var(--primary-background-color);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: bold;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: transform 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.25);
+}
+
+.primary-title {
+    color: var(--primary-text-color);
+    font-size: 1.5rem;
+}
+
+#headline,
+#sub-headline,
+.primary-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-area {
+    display: flex;
+    gap: 1.25rem;
+}
+
+#facade-photo {
+    aspect-ratio: 17 / 18;
+    max-width: 400px;
+    width: 100%;
+}
+
+.text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.service {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.paragraph {
+    color: var(--secondary-text-color);
+    font-size: 0.875rem;
+}
+
+.point {
+    color: var(--highlight-color);
+    font-size: 1.25rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.secondary-title {
+    color: var(--primary-text-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.link {
+    color: var(--highlight-color);
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.75rem;
+    text-align: center;
+}
+
+#footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.discrete-link {
+    color: currentColor;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.link:hover,
+.discrete-link:hover {
+    text-decoration: underline;
+}
+
+#header,
+.section,
+#footer {
+    padding-inline: 1.5rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    #nav {
+        display: none;
+    }
+
+    #hamburguer-menu {
+        display: flex;
+    }
+
+    .content-area {
+        flex-direction: column;
+    }
+
+    #facade-photo {
+        max-width: unset;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Coletti Serviços Automotivos</title>
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="css/style.css" />
+        <script defer src="js/header.js"></script>
+        <script defer src="js/menu.js"></script>
+        <script defer src="js/nav.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header-background">
+            <a href="/">
+                <img id="logo" src="assets/images/logo.png" alt="Logo da empresa Coletti Serviços Automotivos" />
+            </a>
+            <nav id="nav">
+                <a class="nav-item" href="#hero">Início</a>
+                <a class="nav-item" href="#about">Sobre</a>
+                <a class="nav-item" href="#services">Serviços</a>
+                <a class="nav-item" href="#contact">Contato</a>
+            </nav>
+            <button id="hamburguer-menu" onclick="toggle()">
+                <span class="hamburguer-line"></span>
+                <span class="hamburguer-line"></span>
+                <span class="hamburguer-line"></span>
+            </button>
+        </header>
+        <div id="backdrop" class="closed" onclick="toggle()">
+            <nav id="mobile-nav">
+                <a class="mobile-nav-item" href="#hero">Início</a>
+                <a class="mobile-nav-item" href="#about">Sobre</a>
+                <a class="mobile-nav-item" href="#services">Serviços</a>
+                <a class="mobile-nav-item" href="#contact">Contato</a>
+            </nav>
+        </div>
+        <section id="hero" class="section">
+            <div class="container">
+                <h1 id="headline">Seu carro em boas mãos</h1>
+                <h2 id="sub-headline">Serviço completo, preço justo e transparência</h2>
+                <a class="button" href="#contact">Entrar em contato</a>
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h3 class="primary-title">Sobre nós</h3>
+                <div class="content-area">
+                    <img id="facade-photo" src="assets/images/mechanical-workshop.jpg" alt="Fachada da oficina Coletti Serviços Automotivos" />
+                    <p class="paragraph">
+                        A Coletti Serviços Automotivos foi aberta por André Coletti em 1997 e atuou em São Paulo (capital) até 2024, quando se mudou para Lençóis Paulista.
+                    </p>
+                <div>
+            </div>
+        </section>
+        <section id="services" class="section">
+            <div class="container">
+                <h3 class="primary-title">Serviços</h3>
+                <div class="text-area">
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Injeção eletrônica.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Troca de correias.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Limpeza de filtro.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Balanceamento.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Troca de óleo e filtro.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Suspensão.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Embreagem.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Freios.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Revisão.</p>
+                    </span>
+                    <span class="service">
+                        <span class="point">&bull;</span>
+                        <p class="paragraph">Limpeza de bicos.</p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <div class="container">
+                <h3 class="primary-title">Entre em contato</h3>
+                <div class="text-area">
+                    <div class="info">
+                        <h4 class="secondary-title">Endereço</h4>
+                        <p class="paragraph">
+                            R. Guaianazes, 725 - Jardim Monte Azul, Lençóis Paulista - SP, 18682-760
+                        </p>
+                    </div>
+                    <div class="info">
+                        <h4 class="secondary-title">Telefone</h4>
+                        <p class="paragraph">(14) 99118-7264</p>
+                    </div>
+                    <div class="info">
+                        <h4 class="secondary-title">Redes sociais</h4>
+                        <p class="paragraph">
+                            <a
+                                class="link"
+                                href="https://www.instagram.com/coletti_servicos_automotivos/"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                            >
+                                Instagram
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="container">
+                <p class="paragraph">Copyright © 2025 Coletti Serviços Automotivos. Todos os direitos reservados</p>
+                <p class="paragraph">
+                    Feito por
+                    <a
+                        class="discrete-link"
+                        href="https://www.linkedin.com/in/felipecolettii/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        Felipe Coletti
+                    </a>
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
