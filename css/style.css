@@ -51,7 +51,7 @@ html {
     color: var(--primary-background-color);
 }
 
-#hamburguer-menu {
+#hamburger-menu {
     background-color: transparent;
     border: none;
     border-radius: 0.5rem;
@@ -68,7 +68,7 @@ html {
     text-transform: uppercase;
 }
 
-.hamburguer-line {
+.hamburger-line {
     background-color: var(--primary-background-color);
     display: flex;
     height: 2px;
