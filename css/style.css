@@ -54,7 +54,6 @@ html {
 #hamburger-menu {
     background-color: transparent;
     border: none;
-    color: var(--primary-text-color);
     cursor: pointer;
     display: none;
     flex-direction: column;
