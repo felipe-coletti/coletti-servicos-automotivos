@@ -52,7 +52,7 @@ html {
 }
 
 #hamburguer-menu {
-    background-color: var(--primary-background-color);
+    background-color: transparent;
     border: none;
     border-radius: 0.5rem;
     color: var(--primary-text-color);
@@ -69,7 +69,7 @@ html {
 }
 
 .hamburguer-line {
-    background-color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
     display: flex;
     height: 2px;
     width: 32px;
