@@ -178,7 +178,7 @@ html {
 
 #headline,
 #sub-headline,
-.container:not(#about) .primary-title {
+.section:not(#about) .primary-title {
     text-align: center;
 }
 
