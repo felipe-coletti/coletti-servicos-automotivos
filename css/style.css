@@ -165,6 +165,17 @@ html {
     transform: scale(1.25);
 }
 
+.section:not(#about) .container, .content-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+#about .container {
+    display: flex;
+    gap: 1.5rem;
+}
+
 .primary-title {
     color: var(--primary-text-color);
     font-size: 1.5rem;
@@ -180,15 +191,6 @@ html {
 #sub-headline,
 .section:not(#about) .primary-title {
     text-align: center;
-}
-
-.section .container, .content-area {
-    display: flex;
-    gap: 1.25rem;
-}
-
-.section:not(#about) .container, .content-area {
-    flex-direction: column;
 }
 
 #facade-photo {
