@@ -111,7 +111,7 @@ html {
 .section {
     display: flex;
     justify-content: center;
-    padding-block: 1.5rem;
+    padding-block: 1.75rem;
 }
 
 #hero {
@@ -165,7 +165,8 @@ html {
     transform: scale(1.25);
 }
 
-.section:not(#about) .container, .content-area {
+.section:not(#about) .container,
+.content-area {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -266,7 +267,7 @@ html {
 #header,
 .section,
 #footer {
-    padding-inline: 1.5rem;
+    padding-inline: 1.75rem;
     width: 100%;
 }
 
