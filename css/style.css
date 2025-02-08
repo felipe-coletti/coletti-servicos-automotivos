@@ -277,7 +277,7 @@ html {
         display: flex;
     }
 
-    .content-area {
+    #about .container {
         flex-direction: column;
     }
 
