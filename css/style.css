@@ -129,12 +129,6 @@ html {
     width: 100%;
 }
 
-.section .container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
 #hero .container {
     align-items: center;
 }
@@ -179,13 +173,22 @@ html {
 #headline,
 #sub-headline,
 .primary-title {
-    text-align: center;
     text-transform: uppercase;
 }
 
-.content-area {
+#headline,
+#sub-headline,
+.container:not(#about) .primary-title {
+    text-align: center;
+}
+
+.section .container, .content-area {
     display: flex;
     gap: 1.25rem;
+}
+
+.section:not(#about) .container, .content-area {
+    flex-direction: column;
 }
 
 #facade-photo {
