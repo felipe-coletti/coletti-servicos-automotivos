@@ -33,7 +33,6 @@ html {
 }
 
 .header-background {
-    background-color: var(--backdrop-color);
     box-shadow: 0px 5px 20px 0px var(--shadow-color);
 }
 
@@ -45,10 +44,6 @@ html {
     align-items: center;
     display: flex;
     gap: 0.75rem;
-}
-
-.nav-item {
-    color: var(--primary-background-color);
 }
 
 #hamburger-menu {
@@ -79,13 +74,18 @@ html {
 }
 
 #mobile-nav {
-    background-color: var(--primary-background-color);
     box-shadow: -5px 0px 20px 0px var(--shadow-color);
     display: flex;
     flex-direction: column;
     height: 100%;
     max-width: 20rem;
     width: 100%;
+}
+
+.header-background,
+#mobile-nav {
+    background-color: var(--backdrop-color);
+    backdrop-filter: blur(0.5px);
 }
 
 .closed {
@@ -97,12 +97,13 @@ html {
 }
 
 .mobile-nav-item {
-    color: var(--primary-text-color);
     padding: 1rem;
 }
 
 .nav-item,
 .mobile-nav-item {
+    color: var(--primary-background-color);
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
@@ -286,5 +287,18 @@ html {
 
     #facade-photo {
         max-width: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #mobile-nav {
+        backdrop-filter: blur(6px);
+        justify-content: center;
+        max-width: unset;
+    }
+
+    .mobile-nav-item {
+        font-size: 1.25rem;
+        text-align: center;
     }
 }
