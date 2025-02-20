@@ -311,7 +311,7 @@ html {
         max-width: unset;
         top: 50%;
         transform: translate(-50%, -50%);
-        transition: height 0.6s, width 0.6s, opacity 0.6s;
+        transition: height 0.3s, width 0.3s, opacity 0.3s;
     }
 
     #mobile-nav.closed {
