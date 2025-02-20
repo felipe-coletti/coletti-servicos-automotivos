@@ -47,12 +47,18 @@ html {
 }
 
 #hamburger-menu {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
     display: none;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.ghost-button {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-background-color);
+    cursor: pointer;
+    display: flex;
+    font-size: 1.5rem;
     padding: 0.5rem;
 }
 
@@ -70,6 +76,14 @@ html {
     top: 0;
     width: 100%;
     z-index: 2;
+}
+
+#backdrop.closed {
+    display: none;
+}
+
+#backdrop.opened {
+    display: flex;
 }
 
 #mobile-nav {
@@ -91,14 +105,6 @@ html {
     backdrop-filter: blur(0.5px);
 }
 
-#backdrop.closed {
-    display: none;
-}
-
-#backdrop.opened {
-    display: flex;
-}
-
 #mobile-nav.closed {
     overflow: hidden;
     width: 0;
@@ -109,6 +115,7 @@ html {
     width: 100%;
 }
 
+#mobile-nav-header,
 .mobile-nav-item {
     padding: 1rem;
 }
@@ -322,6 +329,15 @@ html {
     #mobile-nav.opened {
         height: 100vh;
         opacity: 100%;
+    }
+
+    #mobile-nav-header {
+        display: flex;
+        justify-content: right;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
 
     .mobile-nav-item {
