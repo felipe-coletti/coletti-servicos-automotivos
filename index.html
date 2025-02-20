@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE-edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Coletti Serviços Automotivos</title>
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
         <link rel="stylesheet" href="css/style.css" />
         <script defer src="js/header.js"></script>
         <script defer src="js/menu.js"></script>
@@ -28,14 +28,13 @@
                 <span class="hamburger-line"></span>
             </button>
         </header>
-        <div id="backdrop" class="closed" onclick="toggle()">
-            <nav id="mobile-nav">
-                <a class="mobile-nav-item" href="#hero">Início</a>
-                <a class="mobile-nav-item" href="#about">Sobre</a>
-                <a class="mobile-nav-item" href="#services">Serviços</a>
-                <a class="mobile-nav-item" href="#contact">Contato</a>
-            </nav>
-        </div>
+        <span id="backdrop" class="closed" onclick="toggle()"></span>
+        <nav id="mobile-nav" class="closed">
+            <a class="mobile-nav-item" href="#hero" onclick="toggle()">Início</a>
+            <a class="mobile-nav-item" href="#about" onclick="toggle()">Sobre</a>
+            <a class="mobile-nav-item" href="#services" onclick="toggle()">Serviços</a>
+            <a class="mobile-nav-item" href="#contact" onclick="toggle()">Contato</a>
+        </nav>
         <section id="hero" class="section">
             <div class="container">
                 <h1 id="headline">Seu carro em boas mãos</h1>
@@ -45,25 +44,38 @@
         </section>
         <section id="about" class="section">
             <div class="container">
-                <img id="facade-photo" src="assets/images/mechanical-workshop.jpg" alt="Fachada da oficina Coletti Serviços Automotivos" />
+                <img
+                    id="facade-photo"
+                    src="assets/images/mechanical-workshop.jpg"
+                    alt="Fachada da oficina Coletti Serviços Automotivos"
+                />
                 <div class="content-area">
                     <h3 class="primary-title">Nossa história</h3>
                     <div class="text-area">
                         <p class="paragraph">
-                            A Coletti Serviços Automotivos começou sua jornada em 1997 com o objetivo de oferecer serviços de alta qualidade com atendimento personalizado. Desde o início, a nossa oficina se destacou pela dedicação e pelo cuidado em cada detalhe, garantindo que seu veículo estivesse nas melhores mãos.
+                            A Coletti Serviços Automotivos começou sua jornada em 1997 com o objetivo de oferecer
+                            serviços de alta qualidade com atendimento personalizado. Desde o início, a nossa oficina se
+                            destacou pela dedicação e pelo cuidado em cada detalhe, garantindo que seu veículo estivesse
+                            nas melhores mãos.
                         </p>
                         <p class="paragraph">
-                            Com mais de 25 anos de experiência, a Coletti Serviços Automotivos utiliza tecnologia de ponta para garantir diagnósticos precisos e soluções eficazes para o seu carro. O que nos distingue não é só nossa experiência, mas também a transparência em todo o processo. Aqui, você sabe exatamente o que é feito com o seu veículo e porque cada decisão é tomada. 
+                            Com mais de 25 anos de experiência, a Coletti Serviços Automotivos utiliza tecnologia de
+                            ponta para garantir diagnósticos precisos e soluções eficazes para o seu carro. O que nos
+                            distingue não é só nossa experiência, mas também a transparência em todo o processo. Aqui,
+                            você sabe exatamente o que é feito com o seu veículo e porque cada decisão é tomada.
                         </p>
                         <p class="paragraph">
-                            Nosso compromisso vai além de simplesmente reparar um carro. Queremos estabelecer uma relação de confiança, em que cada cliente saiba que está recebendo o melhor serviço, com dedicação e respeito ao seu veículo.
+                            Nosso compromisso vai além de simplesmente reparar um carro. Queremos estabelecer uma
+                            relação de confiança, em que cada cliente saiba que está recebendo o melhor serviço, com
+                            dedicação e respeito ao seu veículo.
                         </p>
                         <p class="paragraph">
-                            Venha nos visitar e experimente a diferença de ser atendido por quem entende do assunto e cuida do seu carro com total atenção e profissionalismo.
+                            Venha nos visitar e experimente a diferença de ser atendido por quem entende do assunto e
+                            cuida do seu carro com total atenção e profissionalismo.
                         </p>
                     </div>
                 </div>
-            <div>
+            </div>
         </section>
         <section id="services" class="section">
             <div class="container">

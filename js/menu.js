@@ -1,9 +1,12 @@
 function toggle() {
-    let list = document.getElementById('backdrop')
+    let backdrop = document.getElementById('backdrop')
+    let menu = document.getElementById('mobile-nav')
 
-    if (list.classList.contains('closed')) {
-        list.classList.replace('closed', 'opened')
+    if (backdrop.classList.contains('closed')) {
+        backdrop.classList.replace('closed', 'opened')
+        menu.classList.replace('closed', 'opened')
     } else {
-        list.classList.replace('opened', 'closed')
+        backdrop.classList.replace('opened', 'closed')
+        menu.classList.replace('opened', 'closed')
     }
 }
