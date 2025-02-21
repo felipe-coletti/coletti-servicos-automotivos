@@ -159,7 +159,7 @@ html {
 }
 
 #sub-headline {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 #headline,
@@ -175,7 +175,7 @@ html {
     cursor: pointer;
     font-size: 0.875rem;
     font-weight: bold;
-    padding: 0.75rem;
+    padding: 1rem;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
