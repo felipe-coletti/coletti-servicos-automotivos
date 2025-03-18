@@ -22,25 +22,25 @@
                 <a class="nav-item" href="#services">Serviços</a>
                 <a class="nav-item" href="#contact">Contato</a>
             </nav>
-            <button id="hamburger-menu" class="ghost-button" onclick="toggle()">
+            <button id="hamburger-menu" class="ghost-button" onclick="toggleMenu()">
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
                 <span class="hamburger-line"></span>
             </button>
         </header>
-        <span id="backdrop" class="closed" onclick="toggle()"></span>
-        <nav id="mobile-nav" class="closed">
+        <span id="backdrop" onclick="toggleMenu()"></span>
+        <nav id="mobile-nav">
             <div id="mobile-nav-header">
-                <button class="ghost-button" onclick="toggle()">
+                <button class="ghost-button" onclick="toggleMenu()">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                         <path fill="currentColor" d="m16 0l-1 .01L8 7L1 .01L0 0v1l7 7l-7 7v1h1l7-7l7 7h1v-1L9 8l7-7z" />
                     </svg>
                 </button>
             </div>
-            <a class="mobile-nav-item" href="#hero" onclick="toggle()">Início</a>
-            <a class="mobile-nav-item" href="#about" onclick="toggle()">Sobre</a>
-            <a class="mobile-nav-item" href="#services" onclick="toggle()">Serviços</a>
-            <a class="mobile-nav-item" href="#contact" onclick="toggle()">Contato</a>
+            <a class="mobile-nav-item" href="#hero" onclick="toggleMenu()">Início</a>
+            <a class="mobile-nav-item" href="#about" onclick="toggleMenu()">Sobre</a>
+            <a class="mobile-nav-item" href="#services" onclick="toggleMenu()">Serviços</a>
+            <a class="mobile-nav-item" href="#contact" onclick="toggleMenu()">Contato</a>
         </nav>
         <section id="hero" class="section">
             <div class="container">

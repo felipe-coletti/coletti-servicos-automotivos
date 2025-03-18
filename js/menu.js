@@ -1,12 +1,13 @@
-function toggle() {
-    let backdrop = document.getElementById('backdrop')
-    let menu = document.getElementById('mobile-nav')
+const mobileMenu = document.getElementById('mobile-nav')
+const backdrop = document.getElementById('backdrop')
 
-    if (backdrop.classList.contains('closed')) {
-        backdrop.classList.replace('closed', 'opened')
-        menu.classList.replace('closed', 'opened')
-    } else {
-        backdrop.classList.replace('opened', 'closed')
-        menu.classList.replace('opened', 'closed')
+function toggleMenu() {
+    const isOpen = mobileMenu.classList.contains('open')
+
+    backdrop.classList.toggle('open', !isOpen)
+    mobileMenu.classList.toggle('open', !isOpen)
+
+    if (window.innerWidth <= 600) {
+        document.body.style.overflowY = isOpen ? 'auto' : 'hidden'
     }
 }

@@ -19,6 +19,10 @@ html {
     scroll-padding-top: 5.75rem;
 }
 
+body.no-scroll {
+    overflow-y: hidden;
+}
+
 #header {
     align-items: center;
     color: var(--primary-background-color);
@@ -70,6 +74,7 @@ html {
 }
 
 #backdrop {
+    display: none;
     height: 100vh;
     position: fixed;
     right: 0;
@@ -78,11 +83,7 @@ html {
     z-index: 2;
 }
 
-#backdrop.closed {
-    display: none;
-}
-
-#backdrop.opened {
+#backdrop.open {
     display: flex;
 }
 
@@ -92,27 +93,24 @@ html {
     flex-direction: column;
     height: 100vh;
     max-width: 20rem;
+    overflow: hidden;
     position: fixed;
     right: 0;
     top: 0;
     transition: width 0.6s;
+    width: 0;
     z-index: 3;
+}
+
+#mobile-nav.open {
+    overflow: auto;
+    width: 100%;
 }
 
 .header-background,
 #mobile-nav {
     background-color: var(--backdrop-color);
     backdrop-filter: blur(0.5px);
-}
-
-#mobile-nav.closed {
-    overflow: hidden;
-    width: 0;
-}
-
-#mobile-nav.opened {
-    overflow: auto;
-    width: 100%;
 }
 
 #mobile-nav-header,
@@ -320,20 +318,17 @@ html {
 @media screen and (max-width: 600px) {
     #mobile-nav {
         backdrop-filter: blur(6px);
+        height: 0;
         justify-content: center;
         left: 50%;
         max-width: unset;
-        top: 50%;
+        opacity: 0;
+        top: 50vh;
         transform: translate(-50%, -50%);
         transition: height 0.3s, width 0.3s, opacity 0.3s;
     }
 
-    #mobile-nav.closed {
-        height: 0;
-        opacity: 0;
-    }
-
-    #mobile-nav.opened {
+    #mobile-nav.open {
         height: 100vh;
         opacity: 100%;
     }
@@ -341,9 +336,10 @@ html {
     #mobile-nav-header {
         display: flex;
         justify-content: right;
-        left: 0;
+        padding: unset;
         position: absolute;
-        top: 0;
+        right: 1.25rem;
+        top: 1.25rem;
         width: 100%;
     }
 
