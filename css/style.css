@@ -1,10 +1,10 @@
 :root {
 	--color-backdrop: #00000080;
+	--color-background: #fff;
 	--color-highlight: #e61d27;
-	--color-primary-background: #fff;
-	--color-primary-text: #000;
-	--color-secondary-text: #656565;
 	--color-shadow: #00000025;
+	--color-text-primary: #000;
+	--color-text-secondary: #656565;
 }
 
 * {
@@ -25,7 +25,7 @@ body.no-scroll {
 
 #header {
 	align-items: center;
-	color: var(--color-primary-background);
+	color: var(--color-background);
 	display: flex;
 	justify-content: space-between;
 	left: 0;
@@ -59,7 +59,7 @@ body.no-scroll {
 .ghost-button {
 	background-color: transparent;
 	border: none;
-	color: var(--color-primary-background);
+	color: var(--color-background);
 	cursor: pointer;
 	display: flex;
 	font-size: 1.5rem;
@@ -67,7 +67,7 @@ body.no-scroll {
 }
 
 .hamburger-line {
-	background-color: var(--color-primary-background);
+	background-color: var(--color-background);
 	display: flex;
 	height: 2px;
 	width: 32px;
@@ -112,7 +112,7 @@ body.no-scroll {
 
 .nav-item,
 .mobile-nav-item {
-	color: var(--color-primary-background);
+	color: var(--color-background);
 	font-size: 1rem;
 	font-weight: bold;
 	text-decoration: none;
@@ -153,14 +153,14 @@ body.no-scroll {
 
 #headline,
 #sub-headline {
-	color: var(--color-primary-background);
+	color: var(--color-background);
 }
 
 .button {
-	background-color: var(--color-primary-background);
+	background-color: var(--color-background);
 	border: none;
 	border-radius: 0.5rem;
-	color: var(--color-primary-text);
+	color: var(--color-text-primary);
 	cursor: pointer;
 	font-size: 0.875rem;
 	font-weight: bold;
@@ -188,7 +188,7 @@ body.no-scroll {
 }
 
 .primary-title {
-	color: var(--color-primary-text);
+	color: var(--color-text-primary);
 	font-size: 1.5rem;
 }
 
@@ -224,7 +224,7 @@ body.no-scroll {
 }
 
 .paragraph {
-	color: var(--color-secondary-text);
+	color: var(--color-text-secondary);
 	font-size: 0.875rem;
 }
 
@@ -240,7 +240,7 @@ body.no-scroll {
 }
 
 .secondary-title {
-	color: var(--color-primary-text);
+	color: var(--color-text-primary);
 	font-size: 1rem;
 	text-transform: uppercase;
 }
